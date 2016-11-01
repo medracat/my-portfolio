@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Catalina Medrano: about</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bevan|Raleway:300" rel="stylesheet">
+
+    <style>
+        
+        #navbar-top.navbar-default .navbar-brand {
+    color: rgba(49, 172, 172, 1);
+}
+#navbar-top.navbar-default {
+    font-size: 12px;
+    background-color: #1A1A1A;
+    border-bottom-width: 1px;
+}
+#navbar-top.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#navbar-top.navbar-default .navbar-nav>li>a:hover,
+#navbar-top.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(49, 172, 172, 1);
+    transition-duration: 0.4s;
+    background-color: #1A1A1A;
+}
+#navbar-top.navbar-default .navbar-nav>.active>a,
+#navbar-top.navbar-default .navbar-nav>.active>a:hover,
+#navbar-top.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(85, 85, 85, 1);
+    background-color: #1A1A1A;
+}
+#navbar-top.navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+#navbar-top.navbar-default .navbar-toggle:hover,
+#navbar-top.navbar-default .navbar-toggle:focus {
+    background-color: #ddd;
+}
+#navbar-top.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+#navbar-top.navbar-default .navbar-toggle:hover .icon-bar,
+#navbar-top.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #1A1A1A;
+}
+
+    * {
+  border-radius: 0 !important;
+  font-family: 'Raleway', sans-serif;
+}
+
+.fixed-bg {
+    background-image: url("assets/BGKeyboard.png");
+    min-height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header-container{
+    padding-top: 9%;
+    padding-bottom: 2%;
+    font-family: 'Raleway', sans-serif;
+    alignment-baseline: central;
+    text-align: center;
+    color: black;
+    letter-spacing: 12px;
+    font-size: 90px;
+}        
+        
+
+.container{
+    padding-top: 3%;
+    padding-bottom: 70px;
+}
+
+.jumbotron{
+
+    margin:auto;
+    alignment-baseline: central;
+
+    background-color: #1A1A1A;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    /*padding: 50px;*/
+    padding-top: 25px;
+    /*width:120%;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+.btn{
+    background-color: #1A1A1A; 
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+}
+
+.photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 100%;
+     
+
+}
+
+
+.textIntro{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h1+p {
+
+    display: inline;
+    line-height: 0.86;
+}
+
+h1{
+    color: #31ACAC;
+}
+
+.paragraph{
+    color: #31ACAC;
+line-height: 1.2;
+}
+
+a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    color: white;
+    font-style: normal;
+    font-size: 18px;
+}
+
+a:hover{
+    color:#31ACAC;
+    text-decoration: none;
+}
+        
+              
+.row{
+   display: block; 
+    padding-left: 5%;
+    padding-top: 4%;
+    margin: 0 auto;
+    text-align: center;
+
+            
+}      
+              
+.crossfade {
+    position:relative;
+    height:164px;
+    width:164px;  
+    margin: 1%;
+    
+}
+        
+.crossfade img {
+    position:absolute;
+    left:0;
+    opacity: 1;
+    
+    -webkit-box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.25);
+    box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.25);
+    margin-bottom:20px;
+    
+     -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;    
+    transition: opacity 0.5s ease-in-out;
+}
+ 
+.crossfade img.top:hover {
+    opacity:0.1;
+}       
+
+.modalButton{
+    background-color: white;
+    color: white;
+    font-size: 3em;
+    border: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    
+ }
+        
+.modal-body{
+    color: black;
+    font-size: 10px;
+    }
+        
+
+        
+/*////////////////////////MODAL//////////////////////////////////*/
+        
+      /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    /*z-index: 1; /* Sit on top */
+    padding-top: 5%; /* Location of the box */
+    /*left: 0;
+    top: 0;*/
+    width: 99%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}  
+        
+        
+ /*////////////////////////MODAL//////////////////////////////////*/
+
+</style>
+</head>
+<body>
+    
+  
+
+<div class="fixed-bg">
+    
+     <div class="headline">
+            <div class="header-container">
+                <p>CATALINA MEDRANO</p>
+            </div>
+        </div> 
+    
+    <div id="navbar-top" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="#"></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="#about">ABOUT</a>
+                </li>
+                <li><a href="#work">WORK</a>
+                </li>
+                <li><a href="#contact">CONTACT</a>
+                </li>
+                <li><a href="assets/CV-CatalinaMedrano.pdf"target="_blank">RESUME</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    <div class="container">
+
+                    <img class="img-responsive photo" src="assets/tagline.png" width="960px" height="516px" id="about" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);">
+
+
+        <div class="jumbotron">
+            
+
+
+            <hr width="95%" style="border-color: #1A1A1A;" id="about"> 
+            <hr width="95%" style="border-color: #1A1A1A;" > 
+
+            <div class="textIntro">  
+                <h1>I am</h1>
+                <p class="paragraph">   a creative person who graduated in a technical field and has learned the importance of functionality as well as the prominence of an aesthetic image. I started off in middle school taking my first steps into the world of graphic design and eventually went into college to complement my acquired knowledge with good-old coding and software engineering principles.
+                </p>
+                <p>  </p>
+
+                <p class="paragraph"> More than ten years later, I've come to understand that design and functionality are very much intertwined and have become dependant on the other: pleasing aesthetics mean nothing without proper functionality, and functionality means nothing if there isn't a pleasant image for the user to feel related to.
+                </p>
+
+                <p>  </p>
+
+                <p class="paragraph"> To learn more about my academic and technical qualifications, please <b><a href="assets/CV-CatalinaMedrano.pdf" target="_blank">see my resume</a></b> or <b><a href="https://www.linkedin.com/in/catalina-medrano-05a251b4" target="_blank">find me on LinkedIn.</a></b> </p> 
+                
+                <hr width="95%"  style="border-color: #1A1A1A;"> 
+                
+                <hr width="95%" style="border-color: #1A1A1A;" > 
+                 <hr width="95%" style="border-color: #1A1A1A;" > 
+                
+                <hr width="95%" id="work" style="border-color: #31ACAC;"> 
+                
+
+                
+                <p style="color: white; text-align:center; font-size:3em;  padding-top: 5%">Graphic and print Design</p>
+            
+            <div class="row">
+                
+                <!-------------------- IMAGEN 1 ---------------------------->
+                <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6 crossfade" data-toggle="modal" data-target="#myModal1">
+                  <div class= "img-container">
+                    <img class="img-responsive center-block bottom" src="assets/zoom.png" width="164px" height="164px"/>
+                    </div>
+                  <img class="img-responsive center-block top" src="assets/thumb1.png" width="164px" height="164px"/>            
+              </div>
+                <div id="myModal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/a1.png" width="492px" height="350px" class="img-responsive" style="display: block">
+                            <hr width="95%"> 
+                          <p>2015 International Sun Conference On Teaching And Learning promotional Postcard</p>
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-------------------- IMAGEN 1 ---------------------------->
+                        
+              <!-------------------- IMAGEN 2 ---------------------------->
+                <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6 crossfade" data-toggle="modal" data-target="#myModal2">
+                  <div class= "img-container">
+                    <img class="img-responsive center-block bottom" src="assets/zoom.png" width="164px" height="164px"/>
+                    </div>
+                  <img class="img-responsive center-block top" src="assets/thumb2.png" width="164px" height="164px"/>            
+              </div>
+                
+                <div id="myModal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/a2.png" width="638px" height="825px" class="img-responsive" style="display: block; border: 1px solid #cccccc;">
+                            <hr width="95%"> 
+                          <p>El Paso Community College Computer Science and Information Technology club meeting flyer</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-------------------- IMAGEN 2 ---------------------------->
+                
+                 <!-------------------- IMAGEN 3 ---------------------------->
+                <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6 crossfade" data-toggle="modal" data-target="#myModal3">
+                  <div class= "img-container">
+                    <img class="img-responsive center-block bottom" src="assets/zoom.png" width="164px" height="164px"/>
+                    </div>
+                  <img class="img-responsive center-block top"  src="assets/thumb3.png" width="164px" height="164px"/>            
+              </div>
+                
+                <div id="myModal3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/a3.png" width="492px" height="328px" class="img-responsive" style="display: block">
+                            <hr width="95%"> 
+                          <p>2016 International Sun Conference On Teaching And Learning promotional Postcard</p>
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-------------------- IMAGEN 3 ---------------------------->
+                
+                <!-------------------- IMAGEN 4 ---------------------------->
+                <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6 crossfade" data-toggle="modal" data-target="#myModal4">
+                  <div class= "img-container">
+                    <img class="img-responsive center-block bottom" src="assets/zoom.png" width="164px" height="164px"/>
+                    </div>
+                    
+                  <img class="img-responsive center-block top"  src="assets/thumb4.png" width="164px" height="164px"/>            
+              </div>
+                <div id="myModal4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/a4.png" width="638px" height="826px" class="img-responsive" style="display: block">
+                            <hr width="95%"> 
+                          <p>University of Texas at El Paso Cyber Security club meeting flyer</p>
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-------------------- IMAGEN 4 ---------------------------->
+                
+                <!-------------------- IMAGEN 5 ---------------------------->
+                <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6 crossfade" data-toggle="modal" data-target="#myModal5">
+                  <div class= "img-container">
+                    <img class="img-responsive center-block bottom" src="assets/zoom.png" width="164px" height="164px"/>
+                    </div>
+                    
+                  <img class="img-responsive center-block top" src="assets/thumb5.png" width="164px" height="164px"/>            
+              </div>
+                <div id="myModal5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/a5.png" width="492px" height="328px" class="img-responsive" style="display: block; border: 1px solid #cccccc;">
+                            <hr width="95%"> 
+                          <p>2016 International Sun Conference On Teaching And Learning promotional Postcard</p>
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-------------------- IMAGEN 5 ---------------------------->
+                
+                <!-------------------- IMAGEN 6 ---------------------------->
+                <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6 crossfade" data-toggle="modal" data-target="#myModal6">
+                  <div class= "img-container">
+                    <img class="img-responsive center-block bottom" src="assets/zoom.png" width="164px" height="164px"/>
+                    </div>
+                    
+                  <img class="img-responsive center-block top" src="assets/thumb6.png" width="164px" height="164px"/>            
+              </div>
+                <div id="myModal6" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/a6.png" width="492px" height="398px" class="img-responsive" style="display: block;">
+                            <hr width="95%"> 
+                          <p>2015 Fall Instructor Retreat promotional Postcard</p>
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-------------------- IMAGEN 6 ---------------------------->
+                
+                <!-------------------- IMAGEN 7 ---------------------------->
+                
+                <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6 crossfade" data-toggle="modal" data-target="#myModal10">
+                  <div class= "img-container">
+                    <img class="img-responsive center-block bottom" src="assets/zoom.png" width="164px" height="164px"/>
+                    </div>
+                    
+                  <img class="img-responsive center-block top" src="assets/thumb10.png" width="164px" height="164px"/>            
+              </div>
+                <div id="myModal10" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/a10.png" width="795px" height="839px" class="img-responsive" style="display: block;">
+                            <hr width="95%"> 
+                          <p>CETaL department promotional T-shirt</p>
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-------------------- IMAGEN 7 ---------------------------->
+                
+                <!-------------------- IMAGEN 8 ---------------------------->
+                <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6 crossfade" data-toggle="modal" data-target="#myModal8">
+                  <div class= "img-container">
+                    <img class="img-responsive center-block bottom" src="assets/zoom.png" width="164px" height="164px"/>
+                    </div>
+                    
+                  <img class="img-responsive center-block top" src="assets/thumb8.png" width="164px" height="164px"/>            
+              </div>
+                <div id="myModal8" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/a8.png" width="550px" height="825px" class="img-responsive" style="display: block;">
+                            <hr width="95%"> 
+                          <p>CETaL 2015-2016 Events Calendar</p>
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-------------------- IMAGEN 8 ---------------------------->
+                
+                <!-------------------- IMAGEN 9 ---------------------------->
+                <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6 crossfade" data-toggle="modal" data-target="#myModal9">
+                  <div class= "img-container">
+                    <img class="img-responsive center-block bottom" src="assets/zoom.png" width="164px" height="164px"/>
+                    </div>
+                    
+                  <img class="img-responsive center-block top" src="assets/thumb9.png" width="164px" height="164px"/>            
+              </div>
+                <div id="myModal9" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/a9.png" width="577px" height="825px" class="img-responsive" style="display: block;">
+                            <hr width="95%"> 
+                          <p>2016 International Sun Conference On Teaching And Learning promotional flyer</p>
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-------------------- IMAGEN 9 ---------------------------->
+                
+                <!-------------------- IMAGEN 10 ---------------------------->
+                <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6 crossfade" data-toggle="modal" data-target="#myModal7">
+                  <div class= "img-container">
+                    <img class="img-responsive center-block bottom" src="assets/zoom.png" width="164px" height="164px"/>
+                    </div>
+                    
+                  <img class="img-responsive center-block top" src="assets/thumb7.png" width="164px" height="164px"/>            
+              </div>
+                <div id="myModal7" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="assets/a7.png" width="960px" height="306px" class="img-responsive" style="display: block;">
+                            <hr width="95%"> 
+                          <p>New Instructor Training CETaL site banner</p>
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-------------------- IMAGEN 10 ---------------------------->
+    </div><!-- end Row -->
+
+            <hr width="95%" style="border-color: #1A1A1A;" > 
+                
+
+                
+                <p style="color: white; text-align:center; font-size:3em;  padding-top: 5%">Web Design</p>
+
+
+
+
+            </div><!-- end text -->   
+        </div><!-- end Jumbotron -->
+    </div><!-- end container -->
+</div><!-- end bg -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
+    <!--
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    -->
+    <script src="js/bootstrap.min.js"></script>
+   
+  </body>
+</html>
